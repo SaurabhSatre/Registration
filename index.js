@@ -15,7 +15,10 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
 app.get("/", async (req, res, next) => {
-    res.send({ success: true, message: "Welcome to the registration app 🎉🎉" });
+    res.send({ success: true, message: "Welcome to the registration app 🎉🎉 ",
+    loginRoute:"https://registration-p524.onrender.com/login",
+    RegisterRoute:"https://registration-p524.onrender.com/register",
+    ForgotPasswordRoute:"https://registration-p524.onrender.com/forgot/password" });
 });
 
 // Imports of routes
